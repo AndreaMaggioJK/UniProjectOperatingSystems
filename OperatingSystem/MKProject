@@ -1,0 +1,11 @@
+Project: sem_utils.o Project.o
+	gcc -o Project sem_utils.o Project.o
+	
+sem_utils.o:
+	gcc -c sem_utils.c
+	
+Project.o:
+	gcc -c Project.c
+	
+clean:
+	rm -f *.o Project
